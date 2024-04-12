@@ -44,7 +44,7 @@ a {
 }
 
 a:hover {
-  color: #ffc732;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -189,7 +189,7 @@ section {
 }
 
 .scroll-top:hover {
-  background: #ffc732;
+  background: #000000;
   color: #fff;
 }
 
@@ -801,7 +801,7 @@ section {
 }
 
 .features .nav-link h4 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   margin: 0;
 }
