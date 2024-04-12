@@ -306,7 +306,7 @@ section {
     font-family: var(--font-primary);
     font-size: 14px;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.6);
+    color: #3a3b3c/*rgba(255, 255, 255, 0.381*/;
     text-transform: uppercase;
     white-space: nowrap;
     transition: 0.3s;
@@ -344,7 +344,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    color: #8951d8;
   }
 
   .navbar .dropdown ul {
@@ -442,7 +442,7 @@ section {
     inset: 0;
     padding: 50px 0 10px 0;
     margin: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.215);
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -675,7 +675,7 @@ section {
 # Constructions Section
 --------------------------------------------------------------*/
 .constructions .card-item {
-  border: 1px solid rgba(82, 86, 94, 0.2);
+  border: 1px solid rgba(116, 29, 215, 0.188);
   background: #fff;
   position: relative;
   border-radius: 0;
@@ -1861,7 +1861,7 @@ section {
 }
 .hero .carousel-item::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.571);
+  background-color: rgba(255, 255, 255, 0);
   position: absolute;
   inset: 0;
 }
@@ -1878,7 +1878,7 @@ section {
 }
 
 .hero .info h2 {
-  color: #fff;
+  color: #3a3b3c;
   margin-bottom: 30px;
   padding-bottom: 30px;
   font-size: 56px;
@@ -1906,7 +1906,7 @@ section {
 }
 
 .hero .info p {
-  color: rgba(255, 255, 255, 0.8);
+  color: #3a3b3c/* rgba(255, 255, 255, 0.8)*/;
   font-size: 18px;
 }
 
@@ -1920,7 +1920,7 @@ section {
   border-radius: 50px;
   transition: 0.5s;
   margin: 10px;
-  color: #fff;
+  color: #3a3b3c;
   border: 2px solid var(--color-primary);
 }
 
