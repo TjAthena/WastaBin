@@ -536,7 +536,8 @@ section {
 # Get Started Section
 --------------------------------------------------------------*/
 .get-started .content {
-  padding: 30px 0;
+  padding: 0px 0;
+  margin-top: -100px;
 }
 
 .get-started .content h3 {
@@ -564,8 +565,10 @@ section {
 }
 
 .get-started .php-email-form {
+  align-items: center;
   background: #fff;
   padding: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 100%;
 }
 
@@ -576,14 +579,14 @@ section {
 }
 
 .get-started .php-email-form h3 {
-  font-size: 14px;
+  font-size: 25px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .get-started .php-email-form p {
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 20px;
   padding-left: 400;
 }
@@ -631,8 +634,7 @@ section {
 .get-started .php-email-form input,
 .get-started .php-email-form textarea {
   border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
+  font-size: 18px;
   border-radius: 0;
 }
 
