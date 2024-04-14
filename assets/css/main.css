@@ -75,7 +75,7 @@ section {
 }
 
 .section-header h2 {
-  font-size: 32px;
+  font-size: 34px;
   font-weight: 700;
   position: relative;
   color: #2e3135;
@@ -128,7 +128,7 @@ section {
 }
 
 .breadcrumbs h2 {
-  font-size: 56px;
+  font-size: 45px;
   font-weight: 500;
   color: #3a3b3c;
   font-family: var(--font-secondary);
@@ -140,8 +140,8 @@ section {
   list-style: none;
   padding: 0 0 10px 0;
   margin: 0;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: 400;
   color: var(--color-primary);
 }
 
@@ -304,7 +304,7 @@ section {
     justify-content: space-between;
     padding: 0 3px;
     font-family: var(--font-primary);
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
     color: #3a3b3c/*rgba(255, 255, 255, 0.381*/;
     text-transform: uppercase;
@@ -315,7 +315,7 @@ section {
 
   .navbar a i,
   .navbar a:focus i {
-    font-size: 12px;
+    font-size: 15px;
     line-height: 0;
     margin-left: 5px;
   }
@@ -540,7 +540,7 @@ section {
 }
 
 .get-started .content h3 {
-  font-size: 36px;
+  font-size: 40px;
   color: var(--color-secondary);
   font-weight: 600;
   margin-bottom: 25px;
@@ -560,7 +560,7 @@ section {
 }
 
 .get-started .content p {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .get-started .php-email-form {
@@ -585,6 +585,7 @@ section {
 .get-started .php-email-form p {
   font-size: 14px;
   margin-bottom: 20px;
+  padding-left: 400;
 }
 
 .get-started .php-email-form .error-message {
@@ -694,7 +695,7 @@ section {
 
 .constructions .card-item h4 {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 28px;
   margin-bottom: 15px;
   color: var(--color-secondary);
 }
@@ -722,7 +723,7 @@ section {
 
 .services .service-item .icon i {
   color: var(--color-secondary);
-  font-size: 40px;
+  font-size: 35px;
   transition: ease-in-out 0.3s;
   z-index: 2;
   position: relative;
@@ -747,7 +748,7 @@ section {
   font-weight: 700;
   margin: 0 0 20px 0;
   padding-bottom: 8px;
-  font-size: 22px;
+  font-size: 28px;
   position: relative;
   display: inline-block;
   border-bottom: 4px solid #ebebed;
@@ -756,7 +757,8 @@ section {
 
 .services .service-item p {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 18px;
+  color:#6c757d
   margin-bottom: 0;
 }
 
@@ -775,7 +777,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Features Section
+# Products Section
 --------------------------------------------------------------*/
 .features .nav-tabs {
   border: 0;
@@ -801,14 +803,14 @@ section {
 }
 
 .features .nav-link h4 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
   margin: 0;
 }
 
 @media (max-width: 575px) {
   .features .nav-link h4 {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
@@ -828,7 +830,7 @@ section {
 
 .features .tab-pane h3 {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 34px;
   position: relative;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -855,8 +857,9 @@ section {
 }
 
 .features .tab-pane ul i {
-  font-size: 20px;
+  font-size: 30px;
   padding-right: 4px;
+  padding-left: 80px;
   color: var(--color-primary);
 }
 
