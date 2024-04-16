@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Define your email here
-    $to_email = "your@example.com";
+    $to_email = "tjpradeep2000@gmail.com";
 
     // Get form data
     $name = $_POST['name'];
