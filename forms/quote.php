@@ -2,8 +2,8 @@
 	if (isset($_POST["submit"])) {
 		$name = $_POST['name'];
 		$email = $_POST['email'];
-		$message = $_POST['message'];
-		$human = intval($_POST['human']);
+		$phone = $_POST['phone'];
+    $message = $_POST['message'];
 		$from = $email; 
 		
 		// WARNING: Be sure to change this. This is the address that the email will be sent to
@@ -11,7 +11,8 @@
 		
 		$subject = "Message from ".$name." ";
 		
-		$body = "From: $name\n E-Mail: $email\n Message:\n $message";
+		$body = "From: $name\n email: $email\n phone:\n $phone Message:\n $message";  
+		
  
 		// Check if name has been entered
 		if (!$_POST['name']) {
@@ -25,13 +26,9 @@
 		
 		//Check if message has been entered
 		if (!$_POST['message']) {
-			$errMessage = 'Please enter your message';
+			$errMessage = 'Please enter your message';/*  */
 		}
-		//Check if simple anti-bot test is correct
-		if ($human !== 5) {
-			$errHuman = 'Your anti-spam is incorrect';
-		}
- 
+
 // If there are no errors, send the email
 if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 	if (mail ($to, $subject, $body, $from)) {
