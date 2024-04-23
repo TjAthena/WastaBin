@@ -1,6 +1,6 @@
 <?php
   // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@wastabin.com';
+  $receiving_email_address = 'tjpradeep2000@gmail.com';
 
   // Validate form fields
   if (!isset($_POST['name']) || !isset($_POST['email']) || !isset($_POST['phone']) || !isset($_POST['message'])) {
@@ -11,7 +11,7 @@
   if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
     die('Invalid email address.');
   }
-
+/* */
   // Build email message
   $message = "Name: {$_POST['name']}\n";
   $message .= "Email: {$_POST['email']}\n";
