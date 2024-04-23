@@ -1,41 +1,31 @@
 <?php
-	if (isset($_POST["submit"])) {
-		$name = $_POST['name'];
-		$email = $_POST['email'];
-		$phone = $_POST['phone'];
-    $message = $_POST['message'];
-		$from = $email; 
-		
-		// WARNING: Be sure to change this. This is the address that the email will be sent to
-		$to = 'tjpradeep2000@gmail.com'; 
-		
-		$subject = "Message from ".$name." ";
-		
-		$body = "From: $name\n email: $email\n phone:\n $phone Message:\n $message";  
-		
- 
-		// Check if name has been entered
-		if (!$_POST['name']) {
-			$errName = 'Please enter your name';
-		}
-		
-		// Check if email has been entered and is valid
-		if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-			$errEmail = 'Please enter a valid email address';
-		}
-		
-		//Check if message has been entered
-		if (!$_POST['message']) {
-			$errMessage = 'Please enter your message';/*  */
-		}
+  // Replace contact@example.com with your real receiving email address
+  $receiving_email_address = 'contact@wastabin.com';
 
-// If there are no errors, send the email
-if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
-	if (mail ($to, $subject, $body, $from)) {
-		$result='<div class="alert alert-success">Thank You! I will be in touch</div>';
-	} else {
-		$result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
-	}
-}
-	}
+  // Validate form fields
+  if (!isset($_POST['name']) || !isset($_POST['email']) || !isset($_POST['phone']) || !isset($_POST['message'])) {
+    die('Please fill in all required fields.');
+  }
+
+  // Validate email address
+  if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+    die('Invalid email address.');
+  }
+
+  // Build email message
+  $message = "Name: {$_POST['name']}\n";
+  $message .= "Email: {$_POST['email']}\n";
+  $message .= "Phone: {$_POST['phone']}\n";
+  $message .= "Message:\n{$_POST['message']}\n";
+
+  // Send email
+  $headers = 'From: ' . $_POST['name'] . ' <' . $_POST['email'] . '>' . "\r\n" .
+    'Reply-To: ' . $_POST['email'] . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+  if (mail($receiving_email_address, 'Request for a quote', $message, $headers)) {
+    echo 'Email sent successfully.';
+  } else {
+    die('Error sending email.');
+  }
 ?>
